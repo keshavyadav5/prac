@@ -32,12 +32,14 @@
 
 
 //.............................. password checking 
-console.log("kello");
-console.log("hello world");
-const prompt=require("prompt-sync")();
-let cn=43;
-let a
-while(a!=cn){
-    a=prompt("enter a number")
-}
-console.log("you have entered correct number")
+// console.log("kello");
+// console.log("hello world");
+// const prompt=require("prompt-sync")();
+// let cn=43;
+// let a
+// while(a!=cn){
+//     a=prompt("enter a number")
+// }
+// console.log("you have entered correct number")
+
+console.log(__dirname);
