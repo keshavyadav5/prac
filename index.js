@@ -31,7 +31,9 @@
 
 
 
-//.............................. password checking 
+//.............................. password checking ----------------------------------
+
+
 // console.log("kello");
 // console.log("hello world");
 // const prompt=require("prompt-sync")();
@@ -42,4 +44,34 @@
 // }
 // console.log("you have entered correct number")
 
-console.log(__dirname);
+
+//---------------------------------------------- taking input using prompt ---------------------------------------
+
+
+// const prompt = require('prompt-sync')();
+// const dot = prompt("Enter your name: ");
+// console.log("Your name is ", dot);
+
+
+//---------------------------------------------- calling module ----------------------------------------------
+
+
+const { add, sub, array, object } = require('./second');
+
+
+// this is printing function from another file
+console.log("\nSum of two number is", add(5, 6));
+console.log("Subtraction of two number is", sub(5, 1));
+
+
+// this is printing object from another file 
+console.log("\nCountry name is :", object.country);
+console.log("Capital city is :", object.capital);
+console.log("My home town is :", object.homeTown,"\n");
+
+
+// this is printing or traversing array of another file
+for (i = 0; i < array.length; i++) {
+  console.warn(array[i]);
+}
+
